@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*justify-content: space-evenly;*/
+}
+.test {
+    height: 70vh;
+    background-color: red;
+    width: 70vh;
+}
+
+.timerText {
+    font-size: xx-large;
+}
+
+.backgroundImage {
+    background-image: url("https://dog.ceo/api/breeds/image/random");
+}
