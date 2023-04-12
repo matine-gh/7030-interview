@@ -1,12 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from '@/styles/photos.module.css';
+import Album from "@/components/album";
 
 export default function Photos() {
 
-    const [counter, setCounter] = React.useState(10)
+    const [counter, setCounter] = useState(10);
 
     React.useEffect(() => {
-        // counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
         if (counter > 0) {
             setTimeout(() => setCounter(counter - 1), 1000);
         }else {
@@ -17,8 +17,7 @@ export default function Photos() {
     return (
         <div className={styles.container}>
             <p className={styles.timerText}>Timer: {counter}</p>
-            <div className={styles.test}>
-            </div>
+            <Album counter={counter} />
         </div>
     );
 }

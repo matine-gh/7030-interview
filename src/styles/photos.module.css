@@ -6,11 +6,6 @@
     justify-content: center;
     /*justify-content: space-evenly;*/
 }
-.test {
-    height: 70vh;
-    background-color: red;
-    width: 70vh;
-}
 
 .timerText {
     font-size: xx-large;
